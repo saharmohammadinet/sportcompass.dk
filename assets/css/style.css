@@ -1,0 +1,94 @@
+/* css Reset */
+body{ margin:0px; padding:0px}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td{margin:0; padding:0}
+table{border-collapse:collapse; border-spacing:0}
+fieldset, img{border:0}
+ul{list-style:none}
+ul{list-style:none}
+input, input:focus, button, button:focus{border:none; height:auto; outline:none}
+a{text-decoration:none; outline:none; cursor:pointer;  color:#000}
+a:hover, a:active, a:focus{text-decoration:none !important; outline:none}
+img{border:none}
+html{ scroll-behavior:smooth}
+body{ font-size:16px;  direction:ltr;  line-height:27px;  overflow-x:hidden}
+/* border section */
+.border-bottom{ border-bottom:1px solid #e9ecef}
+/* Heading */
+h1{ margin-bottom:22px}
+/* Animation */
+@keyframes sheen{ 0%{ transform:skewY(-45deg) translateX(0)}
+    100%{ transform:skewY(-45deg) translateX(12.5em)}
+}
+/* BTN call to action */
+.cta{ padding:0.75em 2em;  text-align:center;  text-decoration:none;  color:#40affa;  border:2px solid #40affa;  font-size:24px;  display:inline-block;  border-radius:0.3em;  transition:all 0.2s ease-in-out;  position:relative;  overflow:hidden}
+.cta:before{ content:"";  background-color:rgba(255,255,255,0.5);  height:100%;  width:3em;  display:block;  position:absolute;  top:0;  left:-4.5em;  -webkit-transform:skewX(-45deg) translateX(0);  transform:skewX(-45deg) translateX(0);  transition:none}
+.cta:hover{ background-color:#103991;  color:#fff;  border:2px solid #103991}
+.cta:hover:before{ -webkit-transform:skewX(-45deg) translateX(16.5em);  transform:skewX(-45deg) translateX(16.5em);  transition:all 0.5s ease-in-out}
+/* effect check box */
+.sidebar label{ display:inline-block;  position:relative;  padding-left:25px;  cursor:pointer;  -webkit-user-select:none;  -moz-user-select:none;  -ms-user-select:none;  user-select:none}
+.sidebar label input{ position:absolute;  opacity:0;  cursor:pointer;  height:0;  width:0}
+.checkmark{ position:absolute;  top:3px;  left:0;  height:20px;  width:20px;  background-color:#f7f9fb;  border-radius:5px}
+.sidebar label input:checked ~ .checkmark{ background-color:#2196F3}
+.checkmark:after{ content:"";  position:absolute;  display:none}
+.sidebar label input:checked ~ .checkmark:after{ display:block}
+.sidebar label .checkmark:after{ left:9px;  top:5px;  width:5px;  height:10px;  border:solid white;  border-width:0 3px 3px 0;  -webkit-transform:rotate(45deg);  -ms-transform:rotate(45deg);  transform:rotate(45deg)}
+/* Header */
+header{    background-image:linear-gradient(to right,#34B3F5 0%,#0C3888 100%);     background-repeat:repeat-x;     color:white}
+header .logo,  .menu button{    margin:25px 0 27px}
+header .logo a{    color:#fff;     font-size:27px;     font-weight:bold}
+
+.cart-header{    margin:13px 0 0 0;     position:relative}
+.cart-header a{    width:50px;     height:48px;     display:block;     background:url(../images/sprite.png) 0px 9px no-repeat}
+.cart-header .baj{    position:absolute;     background:red;     display:block;     padding:0 8px;     border-radius:50%;     top:2px;     left:31px}
+.cart-header li{    padding:10px 20px;     color:#000}
+.delete-row-cart{    width:14px;     height:15px;     display:inline-block;     background:url(../images/sprite.png) no-repeat -69px -45px;  cursor:pointer;  margin-right:14px}
+.menu button{ background:none;  border:1px solid white;  border-radius:3px}
+
+.menu button span{ position:relative;  width:30px;  height:30px;  display:block;  border-radius:3px}
+.menu button span:after, .menu button span:before{ position:absolute;  content:"";  width:100%;  height:3px;  border-radius:3px;  background:white;  left:0px}
+.menu button span:after{ top:19px}
+.menu button span:before{ top:11px}
+#navbarHeader{ border-bottom:1px solid white}
+#navbarHeader p{ padding:0px 0 35px}
+#navbarHeader h4{ margin:20px 0 25px;  font-weight:bold;  font-size:21px}
+#navbarHeader a{ color:white}
+/* category */
+.category{ background:#e9ecef;  padding:70px 0}
+.category p{ padding:0 60px;  margin-bottom:30px}
+/* Breadcrumb */
+.breadcrumb{ background:none;  margin:0;  padding:15px}
+/* sidebar */
+.sticky-sidebar{position: -webkit-sticky;  position: -moz-sticky;  position: -ms-sticky;  position: -o-sticky;position: sticky;top:0px;}
+.product-container{ margin:40px 0 0}
+.sidebar{ background:#e9ecef;  padding:10px 20px;  border-radius:5px;}
+.sidebar >span{ display:block;  font-weight:bold;  margin:20px 0 15px;  border-bottom:1px solid rgba(255,255,255,0.7);  padding-bottom:10px}
+.sidebar li{ margin-bottom:10px}
+.blue-sign, .red-sign, .yellow-sign, .green-sign{ width:20px;  height:20px;  display:inline-block;  border-radius:50%;  float:right;  margin-top:4px}
+.blue-sign{ background:blue}
+.red-sign{ background:red}
+.yellow-sign{ background:yellow}
+.green-sign{ background:green}
+/* Products */
+.products .box{    box-shadow:0px 0px 10px #e9ecef;     border:1px solid #e9ecef;     width:262px;     margin:0 auto 30px}
+.products .box img{    display:block;     max-width:93%;     margin:9px auto}
+.products .box h2{    border-bottom:1px solid #e9ecef;     width:93%;     margin:0 auto 17px;     padding:0 0 10px}
+.products .box .option{    border-bottom:1px solid #e9ecef;     width:93%;     margin:0 auto 17px;     padding:0 0 10px}
+.products .box .option span{    float:none;     margin:0 4px 0 0}
+.bottom-box{    padding:0 0 10px}
+.bottom-box >div{    width:50%}
+.bottom-box .quantity{    border:1px solid #e9ecef;     width:31%;     border-radius:5px;     padding:3px 10px;     text-align:center}
+.bottom-box .plus-btn, .bottom-box .minus-btn{    width:25px;     height:25px;     display:inline-block;     border-radius:50%;     position:relative;     top:8px;     cursor:pointer}
+.bottom-box .minus-btn{    background:url("../images/sprite.png") no-repeat -63px 1px #123b92}
+.bottom-box .plus-btn{    background:url("../images/sprite.png") no-repeat -63px -19px #123b92;  margin-left:9px}
+.price{ font-weight:bold;  text-align:center;  padding:6px 0 0;  font-size:20px}
+.add-cart-btn{ width:93%;  margin:6px auto;  border-top:1px solid #e9ecef;  padding:12px 0 6px;  text-align:center}
+.add-cart-btn a{ display:inline-block;  color:#fff;  background:#74d874;  font-weight:bold;  padding:6px 19px 7px;  border-radius:5px;  transition:0.4s}
+.add-cart-btn a:hover{ box-shadow:0px 0px 10px #86f386}
+footer{ background-image:linear-gradient(to right,#34B3F5 0%,#0C3888 100%);  color:#fff;  padding:20px 0}
+footer span{ color:red}
+/* REsponsive */
+@media (min-width:992px) and (max-width:1199px){ .products .box{ width:230px}  }
+@media (min-width:768px) and (max-width:991px){
+    .sticky-sidebar{  position: relative;}
+    .sidebar{margin-bottom: 30px;}
+}
